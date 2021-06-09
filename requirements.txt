@@ -4,4 +4,3 @@ TgCrypto
 pytesseract
 Pillow
 py-multiapi
-git+git://github.com/mrcentimetre/gpytranslator-bot.git
