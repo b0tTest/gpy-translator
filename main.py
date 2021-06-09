@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from config import API_ID, API_HASH, TOKEN, sudofilter
+from config import API_ID, API_HASH, BOT_TOKEN
 import os, sys
 from threading import Thread
 from datetime import datetime
@@ -9,7 +9,7 @@ bot = Client(
     ":memory:",
     api_id=API_ID,
     api_hash=API_HASH,
-    bot_token=TOKEN,
+    bot_token=BOT_TOKEN,
     plugins=dict(root="plugins"),
 )
 
@@ -22,7 +22,6 @@ def stop_and_restart():
 
 @bot.on_message(
     filters.command("r")
-    & sudofilter
     & ~filters.forwarded
     & ~filters.group
     & ~filters.edited
@@ -35,7 +34,6 @@ async def restart(bot, message):
 
 @bot.on_message(
     filters.command("getbotdb")
-    & sudofilter
     & ~filters.forwarded
     & ~filters.group
     & ~filters.edited
@@ -45,7 +43,7 @@ async def send_the_db(bot, message):
     await message.reply_document("userlanguages.db", thumb="botprofilepic.jpg")
 
 
-@bot.on_message(filters.command("ping") & sudofilter & filters.private)
+@bot.on_message(filters.command("ping") & filters.private)
 async def ping(bot, message):
     a = datetime.now()
     m = await message.reply_text("pong")
@@ -53,7 +51,7 @@ async def ping(bot, message):
     await m.edit_text(f"pong {(b - a).microseconds / 1000} ms")
 
 
-@bot.on_message(filters.command("bot_stats") & sudofilter)
+@bot.on_message(filters.command("bot_stats")
 async def get_bot_stats(bot, message):
     await message.reply(f"the bot have {await get_users_count()} users")
 
