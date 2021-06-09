@@ -4,6 +4,12 @@
 GpyTranslate is a word 'G+Py+Translate' which means 'Google Python Translate'. A bot to help you translate text (with emojis) to a language from any other language in world.
 
 
+## Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/samadii/gpytranslator-bot)
+
+
+
 ## Features
 
 - Supports in groups
@@ -25,17 +31,12 @@ Install tge requirements
 ```
 pip3 install -U -r requirements.txt
 ```
-Edit the API_ID and API_HASH and TOKEN in [config.py.example](https://github.com/mrcentimetre/gpytranslator-bot/blob/main/config.py.example)
+Edit the API_ID and API_HASH and TOKEN in [config.py](https://github.com/samadii/gpytranslator-bot/blob/main/config.py)
 Example:
 ```
 --API_ID >> 1
 --API_HASH >> abcdef1234
 --TOKEN >> 1234567890:ABCDEF
---sudousers >> [123456, 654321]
-```
-change the name of config.py.example to config.py
-```
-cp config.py.example config.py
 ```
 
 Run the bot
