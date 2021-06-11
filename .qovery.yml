@@ -1,0 +1,11 @@
+---
+application:
+  name: "gpytranslator-bot"
+  project: "Gpytrans"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-gpytranslator-bot"
+  routes:
+  - application_name: "gpytranslator-bot"
+    paths:
+    - "/*"
