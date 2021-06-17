@@ -51,9 +51,4 @@ async def ping(bot, message):
     await m.edit_text(f"pong {(b - a).microseconds / 1000} ms")
 
 
-@bot.on_message(filters.command("bot_stats")
-async def get_bot_stats(bot, message):
-    await message.reply(f"the bot have {await get_users_count()} users")
-
-
 bot.run()
