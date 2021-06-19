@@ -28,12 +28,6 @@ async def help(bot, message: Message):
     await message.reply_text(constants.help_text)
 
 
-@Client.on_message(filters.command("donate", prefix) & filters.private)
-@logging_errors
-async def donate(bot, message: Message):
-    await message.reply_text(constants.donate_text)
-
-
 @Client.on_message(filters.command("language", prefix))
 @logging_errors
 async def language(bot, message: Message):
