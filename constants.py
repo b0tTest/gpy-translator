@@ -6,31 +6,20 @@ prefix = ["/", "!", "#", "."]
 
 
 start_message_text = """
-Hello {} \U0001F60E I am GpyTranslatorBot AKA Gipy \ud83e\udd16
+Hello {}, I am GpyTranslatorBot \ud83e\udd16
 
-Send any text which you would like to translate for English.
+I can translate any text which you would like, just send me something.
 
 **Available commands:**
-/donate - Support developers
 /help - Show this help message
 /language - Set your main language
-
-If you have questions about this bot or bots' development__ -  Feel free to put your question in @TDICSupport
 
 Enjoy! ☺"""
 
 start_message_reply_markup = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(
-                "➕ Add me to a Group ➕",
-                url="http://t.me/GpyTranslatorBot?startgroup=tr",
-            )
-        ],
-        [
-            InlineKeyboardButton("🔍 Inline here", switch_inline_query_current_chat=" "),
-            InlineKeyboardButton(
-                "📄 Source code", url="https://github.com/mrcentimetre/gpytranslator-bot"
+            InlineKeyboardButton("🔍 Inline here", switch_inline_query_current_chat=" "
             ),
         ],
         [
@@ -57,13 +46,6 @@ error_message_markup = InlineKeyboardMarkup(
 )
 
 
-credits = """Development 🧑‍💻
- • @MrCentimetre
- • @itayki
- • @rojserbest
-
-Inspiration 👨🏻‍🏫
- • @DavideGalilei"""
 
 help_text = """
 **GpyTranslate Bot**
@@ -88,14 +70,6 @@ Just send copied text or forward message with other language to GpyTranslator Bo
 **Translate in inline mode**
 @GpyTranslatorBot (language) (text)
 
----
-Find a problem? Send to @MrCentimetre
-
-coded by @MrCentimetreLK and @itayki by using @DavideGalilei's Library with 💚
-"""
-
-donate_text = """
-It's just a command \ud83d\ude09 But you can contact me - @MrCentimetre
 """
 
 language_text = """
@@ -126,7 +100,7 @@ translate_string_two = (
 
 inline_text_string_one = """Translate from {} to {}"""
 
-error_msg_string = """**Error:**  \n\n ```{}``` \n\n **forward this message to https://t.me/TDICSupport if you see this error again**"""
+error_msg_string = """**Error:**  \n\n ```{}``` \n\n"""
 
 help_group_string = """To get help click on the button below"""
 
