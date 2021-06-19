@@ -19,12 +19,10 @@ Enjoy! ☺"""
 start_message_reply_markup = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("🔍 Inline here", switch_inline_query_current_chat=" "
-            ),
+            InlineKeyboardButton("🔍 Inline here", switch_inline_query_current_chat=" "),
         ],
         [
             InlineKeyboardButton("🆘 Help", callback_data="help"),
-            InlineKeyboardButton("Credits 💚", callback_data=b"Credits"),
         ],
     ]
 )
