@@ -26,10 +26,6 @@ start_message_reply_markup = InlineKeyboardMarkup(
             InlineKeyboardButton("🆘 Help", callback_data="help"),
             InlineKeyboardButton("Credits 💚", callback_data=b"Credits"),
         ],
-        [
-            InlineKeyboardButton("📣 Channel", url="https://t.me/TDICProjects"),
-            InlineKeyboardButton("Group 👥", url="https://t.me/TDICSupport"),
-        ],
     ]
 )
 
