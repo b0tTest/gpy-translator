@@ -46,10 +46,6 @@ help_text = """
 
 GpyTranslate is a word 'G+Py+Translate' which means 'Google Python Translate'. A bot to help you translate text (with emojis) to few Languages from any other language in world.
 
-GpyTranslator Bot is able to detect a wide variety of languages because he is a grand son of Google Translate API.
-
-You can use GpyTranslator Bot in his private chat. But GpyTranslator Bot is not available for Telegram Group & Channel.
-
 **How To**
 Just send copied text or forward message with other language to GpyTranslator Bot and you'll receive a translation of the message in the language of your choice. Send /language command to know which language is available.
 
