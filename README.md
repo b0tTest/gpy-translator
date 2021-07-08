@@ -23,7 +23,7 @@ GpyTranslate is a word 'G+Py+Translate' which means 'Google Python Translate'. A
 Clone the repository:
 
 ```
-git clone https://github.com/mrcentimetre/gpytranslator-bot.git && cd gpytranslator-bot
+git clone https://github.com/samadii/gpytranslator-bot.git && cd gpytranslator-bot
 ```
 
 Install tge requirements
