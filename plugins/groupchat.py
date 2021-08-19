@@ -67,7 +67,7 @@ async def translategrouptwo(bot, message: Message):
 
 
 @Client.on_message(
-    filters.command(["help", "help@gpytranslatorbot"], prefix) & filters.group
+    filters.command(["help", "help@TG_translatorbot"], prefix) & filters.group
 )
 @logging_errors
 async def helpgroupcmd(bot, message: Message):
@@ -78,7 +78,7 @@ async def helpgroupcmd(bot, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🆘 Help", url=f"https://t.me/{getmebot.username}?start=help"
+                        "💡 Help", url=f"https://t.me/{getmebot.username}?start=help"
                     ),
                     InlineKeyboardButton(
                         "🗑 Delete this message", callback_data="closethismsg"
