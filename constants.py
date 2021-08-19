@@ -6,15 +6,15 @@ prefix = ["/", "!", "#", "."]
 
 
 start_message_text = """
-Hello {}, I am GpyTranslatorBot \ud83e\udd16
+**Hello {}, I am TranslatorBot \ud83e\udd16
 
-I can translate any text which you would like, just send me something.
+  I can translate any language to you selected language, just send me something.\n\n🏷️ Maintained By:@Amani_m_h_d**
 
-**Available commands:**
+**Available commands:
 /help - Show this help message
-/language - Set your main language
+/language - Set your main language**
 
-Enjoy! ☺"""
+__Enjoy! ☺__"""
 
 start_message_reply_markup = InlineKeyboardMarkup(
     [
@@ -22,7 +22,7 @@ start_message_reply_markup = InlineKeyboardMarkup(
             InlineKeyboardButton("🔍 Inline here", switch_inline_query_current_chat=" "),
         ],
         [
-            InlineKeyboardButton("🆘 Help", callback_data="help"),
+            InlineKeyboardButton("💡 Help", callback_data="help"),
         ],
     ]
 )
@@ -42,12 +42,12 @@ error_message_markup = InlineKeyboardMarkup(
 
 
 help_text = """
-**GpyTranslate Bot**
+**Simple Translate Bot**
 
-GpyTranslate is a word 'G+Py+Translate' which means 'Google Python Translate'. A bot to help you translate text (with emojis) to few Languages from any other language in world.
+ `A bot to help you translate text (with emojis) to few Languages from any other language.`
 
 **How To**
-Just send copied text or forward message with other language to GpyTranslator Bot and you'll receive a translation of the message in the language of your choice. Send /language command to know which language is available.
+**Just send copied text or forward message with other language to Translator Bot and you'll receive a translation of the message in the language of your choice. Send /language command to know which language is available.**
 
 ****More help****
 
@@ -58,7 +58,7 @@ Just send copied text or forward message with other language to GpyTranslator Bo
 /tr (language) (text)
 
 **Translate in inline mode**
-@GpyTranslatorBot (language) (text)
+@TG_translatorbot (language) (text)
 
 """
 
@@ -78,7 +78,7 @@ List of language codes: https://cloud.google.com/translate/docs/languages
 
 error_ocr_no_reply = """reply to a photo to get the text"""
 
-lang_saved_message = """{} has been set as your main language."""
+lang_saved_message = """**{} has been set as your main language.**"""
 
 ocr_message_text = """```the text in the image:``` \n\n {}"""
 
