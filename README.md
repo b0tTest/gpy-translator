@@ -6,7 +6,7 @@ GpyTranslate is a word 'G+Py+Translate' which means 'Google Python Translate'. A
 
 ## Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/samadii/gpytranslator-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/amanimuhammed/gpytranslator-bot)
 
 
 
