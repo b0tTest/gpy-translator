@@ -6,15 +6,15 @@ prefix = ["/", "!", "#", "."]
 
 
 start_message_text = """
-**Hello {}, I am TranslatorBot \ud83e\udd16
+**Hello {},\n I am Simple TranslatorBot \ud83e\udd16
 
-  I can translate any language to you selected language, just send me something.\n\n🏷️ Maintained By:@Amani_m_h_d**
+ I can translate any language to you selected language, just send me something.**
 
 **Available commands:
 /help - Show this help message
 /language - Set your main language**
 
-__Enjoy! ☺__"""
+🏷️ Maintained By:@Amani_m_h_d**"""
 
 start_message_reply_markup = InlineKeyboardMarkup(
     [
@@ -52,13 +52,13 @@ help_text = """
 ****More help****
 
 **Groups**
-/tr (language) by reply to translate the replied message
+__/tr (language) by reply to translate the replied message__
 
 **Translate in private chat without change the main language**
-/tr (language) (text)
+__/tr (language) (text)__
 
 **Translate in inline mode**
-@TG_translatorbot (language) (text)
+__@TG_translatorbot (language) (text)__
 
 """
 
