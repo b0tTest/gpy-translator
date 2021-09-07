@@ -54,4 +54,5 @@ python3 main.py
 * [Mr Centimetre](https://github.com/mrcentimetre) 
 * [iiiiii1wepfj](https://github.com/iiiiii1wepfj)
 
-
+- [fork from](https://github.com/amanimuhammed/gpytranslator-bot)
+- [fork 2](https://github.com/samadii/gpytranslator-bot)
